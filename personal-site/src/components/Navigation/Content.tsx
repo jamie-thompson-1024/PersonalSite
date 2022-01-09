@@ -12,21 +12,11 @@ function Content()
     return(
         <div className="Content">
             <Routes>
-                <Route path="/">
-                    <Home />
-                </Route>
-                <Route path="/aboutme">
-                    <AboutMe />
-                </Route>
-                <Route path="/projects">
-                    <Projects />
-                </Route>
-                <Route path="/project">
-                    
-                </Route>
-                <Route path="/contactme">
-                    <ContactMe />
-                </Route>
+                <Route path="/" element={ <Home /> } />
+                <Route path="/aboutme" element={ <AboutMe /> } />
+                <Route path="/projects" element={ <Projects /> } />
+                <Route path="/project" element={ undefined } />
+                <Route path="/contactme" element={ <ContactMe /> } />
             </Routes>
         </div>
     )

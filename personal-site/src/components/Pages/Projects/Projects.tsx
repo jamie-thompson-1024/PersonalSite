@@ -1,6 +1,6 @@
 
 import './Projects.css';
-import './PageCommon.css';
+import '../PageCommon.css';
 
 function Projects()
 {

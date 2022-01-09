@@ -1,6 +1,6 @@
 
 import './ContactMe.css';
-import './PageCommon.css';
+import '../PageCommon.css';
 
 function ContactMe()
 {

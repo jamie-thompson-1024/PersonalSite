@@ -30,9 +30,9 @@ function Nav()
         }else{
             return(
                 <div className="Nav">
-                    { links.map((link) => {
-                        <Link path={link.path}>{ link.name }</Link>
-                    }) }
+                    { links.map((link, i) => 
+                        <Link to={link.path} key={i}>{ link.name }</Link>
+                    ) }
                     <button>^</button>
                 </div>
             )
@@ -41,9 +41,9 @@ function Nav()
         // Landscape
         return(
             <div className="Nav">
-                { links.map((link) => {
-                    <Link path={link.path}>{ link.name }</Link>
-                }) }
+                { links.map((link, i) => 
+                    <Link to={link.path} key={i}>{ link.name }</Link>
+                ) }
             </div>
         )
     }
