@@ -1,9 +1,9 @@
 
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Nav.css';
 
-const landscapeMinWidth = 800;
+const landscapeMinWidth = 600;
 const links = [
     { name: "Home", path: "/"},
     { name: "About Me", path: "/aboutme"},
@@ -14,37 +14,60 @@ const links = [
 function Nav()
 {
     const [min, setMin] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < landscapeMinWidth);
+
     const location = useLocation();
 
-    if(window.innerWidth < landscapeMinWidth)
+    const resize = useCallback(() => {
+        setIsMobile(window.innerWidth < landscapeMinWidth);
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('resize', resize);
+        return () => {
+            window.removeEventListener('resize', resize);
+        };
+    }, [resize]);
+
+    if(isMobile)
     {
         // Portrait
         if(min)
         {
             return(
-                <div className="Nav">
-                    <button>{'>'}</button>
-                    <div>{ location }</div>
-                </div>
+                <nav className="Nav Nav-Portrait-min">
+                    <button onClick={() => { setMin(false); }}>{'>'}</button>
+                    <div>{ links.find(link => link.path === location.pathname )?.name }</div>
+                </nav>
             )
         }else{
             return(
-                <div className="Nav">
+                <nav className="Nav Nav-Portrait">
                     { links.map((link, i) => 
-                        <Link to={link.path} key={i}>{ link.name }</Link>
+                        <Link 
+                            className={link.path === location.pathname ? "Nav-ThisLocation" : ""} 
+                            to={link.path} 
+                            key={i}>
+                                { link.name }
+                        </Link>
                     ) }
-                    <button>^</button>
-                </div>
+                    <button onClick={() => { setMin(true); }}>^</button>
+                </nav>
             )
         }
     }else{
         // Landscape
         return(
-            <div className="Nav">
+            <nav className="Nav Nav-Landscape">
                 { links.map((link, i) => 
-                    <Link to={link.path} key={i}>{ link.name }</Link>
+                        <Link 
+                            className={link.path === location.pathname ? "Nav-ThisLocation" : ""} 
+                            to={link.path} 
+                            key={i}>
+                                { link.name }
+                        </Link>
                 ) }
-            </div>
+            </nav>
         )
     }
 }

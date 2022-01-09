@@ -1,4 +1,49 @@
 .Nav
 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
 
+    text-align: center;
+
+    display: flex;
+}
+
+.Nav > a
+{
+    text-decoration: none;
+    color: var(--theme-text);
+}
+
+.Nav > a:hover
+{
+
+}
+
+.Nav-ThisLocation
+{
+    color: red !important;
+}
+
+.Nav-Landscape
+{
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 0.8em;
+}
+
+.Nav-Portrait
+{
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 0.5em;
+}
+
+.Nav-Portrait-min
+{
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 0.5em;
+    
+    padding: 0.4em;
 }
