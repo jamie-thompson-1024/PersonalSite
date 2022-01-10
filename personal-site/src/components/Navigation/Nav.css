@@ -9,27 +9,45 @@
     display: flex;
 }
 
+.Nav > button
+{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav > button > svg
+{
+    width: 2em;
+    height: 2em;
+}
+
 .Nav > a
 {
     text-decoration: none;
     color: var(--theme-text);
+    border-radius: 5px;
+    padding: 3px 10px 3px 10px;
 }
 
 .Nav > a:hover
 {
-
+    background-color: var(--theme-link-hover);
 }
 
 .Nav-ThisLocation
 {
-    color: red !important;
+    background-color: var(--theme-link-active);
+    padding: 3px;
 }
 
 .Nav-Landscape
 {
     flex-direction: row;
+    align-items: center;
     justify-content: flex-start;
-    column-gap: 0.8em;
+    column-gap: 0.3em;
 }
 
 .Nav-Portrait
@@ -43,6 +61,7 @@
 {
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     column-gap: 0.5em;
     
     padding: 0.4em;

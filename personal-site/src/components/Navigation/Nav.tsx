@@ -1,4 +1,5 @@
 
+import SVG from 'react-inlinesvg';
 import { useCallback, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Nav.css';
@@ -36,7 +37,9 @@ function Nav()
         {
             return(
                 <nav className="Nav Nav-Portrait-min">
-                    <button onClick={() => { setMin(false); }}>{'>'}</button>
+                    <button onClick={() => { setMin(false); }}>
+                        <SVG src="/icons/hamburger-menu.svg" />
+                    </button>
                     <div>{ links.find(link => link.path === location.pathname )?.name }</div>
                 </nav>
             )
@@ -51,7 +54,9 @@ function Nav()
                                 { link.name }
                         </Link>
                     ) }
-                    <button onClick={() => { setMin(true); }}>^</button>
+                    <button onClick={() => { setMin(true); }}>
+                        <SVG src="/icons/up-arrow.svg" />
+                    </button>
                 </nav>
             )
         }
