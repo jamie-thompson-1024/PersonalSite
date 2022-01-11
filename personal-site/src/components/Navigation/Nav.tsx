@@ -32,7 +32,6 @@ function Nav()
 
     if(isMobile)
     {
-        // Portrait
         if(min)
         {
             return(
@@ -61,7 +60,6 @@ function Nav()
             )
         }
     }else{
-        // Landscape
         return(
             <nav className="Nav Nav-Landscape">
                 { links.map((link, i) => 

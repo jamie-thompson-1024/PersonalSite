@@ -5,9 +5,12 @@ import './PageCommon.css';
 function Home()
 {
     return (
-        <div className="Home PageCommon">
-            
-        </div>
+        <main className="Home PageCommon">
+            <div className="Home-TextContainer">
+
+            </div>
+            <img src="/images/portrait.jpg" alt="my portrait"></img>
+        </main>
     )
 }
 

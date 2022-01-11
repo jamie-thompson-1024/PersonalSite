@@ -5,9 +5,9 @@ import '../PageCommon.css';
 function Projects()
 {
     return (
-        <div className="Projects PageCommon">
+        <main className="Projects PageCommon">
             
-        </div>
+        </main>
     )
 }
 

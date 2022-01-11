@@ -2,3 +2,23 @@
 {
 
 }
+
+.Home-TextContainer
+{
+
+}
+
+.Home > img
+{
+    width: 20em;
+
+    clip-path: ellipse(45% 40% at 47%);
+}
+
+@media (min-width: 600px) 
+{
+    .Home > img
+    {
+        width: 25em;
+    }
+}
