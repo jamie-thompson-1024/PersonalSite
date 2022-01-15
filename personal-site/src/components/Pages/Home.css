@@ -1,24 +1,40 @@
 .Home
 {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Home-TextContainer
 {
-
+    padding: 3em 4em 3em 3em;
 }
 
 .Home > img
 {
-    width: 20em;
+    width: 90%;
+    max-width: 100%;
 
     clip-path: ellipse(45% 40% at 47%);
 }
 
 @media (min-width: 600px) 
 {
+    .Home
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .Home-TextContainer
+    {
+        margin: 5em 0 0 0;
+    }
+
     .Home > img
     {
-        width: 25em;
+        width: 40%;
+        max-width: 20em;
     }
 }

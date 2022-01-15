@@ -2,3 +2,21 @@
 {
 
 }
+
+.MessagemeForm-failed
+{
+    color: red;
+}
+
+.MessageMeForm > form
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.MessageMeForm > form > div
+{
+    display: flex;
+    flex-direction: column;
+}
