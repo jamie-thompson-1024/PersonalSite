@@ -15,7 +15,7 @@
     width: 90%;
     max-width: 100%;
 
-    clip-path: ellipse(45% 40% at 47%);
+    clip-path: ellipse(50% 50%);
 }
 
 @media (min-width: 600px) 
@@ -29,7 +29,7 @@
     
     .Home-TextContainer
     {
-        margin: 5em 0 0 0;
+        margin: 1em 0 0 0;
     }
 
     .Home > img
