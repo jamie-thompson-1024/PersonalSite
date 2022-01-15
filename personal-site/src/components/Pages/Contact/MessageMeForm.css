@@ -3,9 +3,20 @@
 
 }
 
-.MessagemeForm-failed
+.MessageMeForm-failed
 {
     color: red;
+}
+
+.MessageMeForm-disabled
+{
+    color: #888888;
+}
+
+.MessageMeForm-disabled input
+{
+    outline-color: #888888;
+    color: #888888;
 }
 
 .MessageMeForm > form

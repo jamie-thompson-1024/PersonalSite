@@ -34,8 +34,8 @@ function MessageMeForm()
     }, [setBotQuestion, formId]);
 
     return (
-        <div className="MessageMeForm">
-            <form action="/message/submit" >
+        <div className={ "MessageMeForm" + (failMessage === botQuestion ? " MessageMeForm-disabled" : "") }>
+            <form action="/message/submit">
                 <div>
                     <label
                         htmlFor="name">Name: </label>
@@ -67,7 +67,7 @@ function MessageMeForm()
                 <div>
                     <label
                         htmlFor="bottest" 
-                        className={ "" + failMessage === botQuestion ? " MessagemeForm-failed" : "" }>
+                        className={ "" + failMessage === botQuestion ? " MessageMeForm-failed" : "" }>
                             { botQuestion }
                         </label>
                     <input 
