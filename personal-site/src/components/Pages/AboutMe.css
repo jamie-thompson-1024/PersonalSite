@@ -3,20 +3,44 @@
 
 }
 
-.AboutMe > p
+.AboutMe-Head
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutMe-Head > p
 {
     padding: 2em 3em 2em 3em;
 }
 
-.AboutMe > p > img
+.AboutMe-Head > img
 {
-    float: right;
+    align-self: center;
 
-    margin: 0.3em 2em 0 0.3em;
-
-    width: 25%;
-    max-width: 25em;
+    width: 80%;
     min-width: 10em;
+    max-width: 25em;
+
+    margin: 0.5em;
 
     clip-path: circle(50%);
+}
+
+@media (min-width: 600px) 
+{
+    .AboutMe-Head
+    {
+        flex-direction: row;
+    }
+
+    .AboutMe-Head > img
+    {
+        width: 25%;
+    }
+    
+    .AboutMe-Head > p
+    {
+        padding: 2em 0 2em 3em;
+    }
 }

@@ -14,7 +14,7 @@ const links = [
 
 function Nav()
 {
-    const [min, setMin] = useState(false);
+    const [min, setMin] = useState(true);
     const [isMobile, setIsMobile] = useState(window.innerWidth < landscapeMinWidth);
 
     const location = useLocation();
