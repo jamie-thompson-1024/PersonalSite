@@ -1,7 +1,9 @@
 
+import { ProjectInfo, Order, Filter } from './ProjectInfo';
+
 import './SortFilterProjects.css';
 
-function SortFilterProjects()
+function SortFilterProjects(props: { onChange: (order: Order, filter: Filter) => void })
 {
     return (
         <div className="SortFilterProjects">

@@ -1,4 +1,50 @@
 .ProjectItem
 {
+    width: 20em;
+    padding: 5px;
 
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+
+    border: 1px solid var(--theme-border);
+    border-radius: 5px;
+}
+
+.ProjectItem-Title
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.ProjectItem-Description
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.ProjectItem-TagBox
+{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.ProjectItem-Tag
+{
+
+}
+
+.ProjectItem-Image
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProjectItem-Image > img
+{
+    width: 8em;
 }

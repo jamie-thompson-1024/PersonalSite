@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import './MessageMeForm.css';
 
-const failMessage = "couldnt retreive question";
+const failMessage = "Error";
 
 function MessageMeForm()
 {
