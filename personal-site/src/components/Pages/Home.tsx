@@ -10,7 +10,7 @@ function Home()
                 <h1>Hi, My name is Jamie Thompson</h1>
                 <h2>Im a programmer who specialises in web development</h2>
             </div>
-            <img src="/images/portrait.jpg" alt="my portrait"></img>
+            <img src="/Assets/images/portrait.jpg" alt="my portrait"></img>
         </main>
     )
 }

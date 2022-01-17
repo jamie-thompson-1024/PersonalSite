@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {
+            "name": "Test Project",
+            "description": "Test project description",
+            "tags": ["thing 0", "thing 2"],
+            "markdown": "testproject.md"
+        }
+    ]
+}

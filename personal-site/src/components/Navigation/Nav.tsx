@@ -37,9 +37,9 @@ function Nav()
             return(
                 <nav className="Nav Nav-Portrait-min">
                     <button onClick={() => { setMin(false); }}>
-                        <SVG src="/icons/hamburger-menu.svg" />
+                        <SVG src="/Assets/icons/hamburger-menu.svg" />
                     </button>
-                    <div>{ links.find(link => link.path === location.pathname )?.name }</div>
+                    <div>{ links.find(link => !!location.pathname.match(`/^${link.path}/g`) )?.name }</div>
                 </nav>
             )
         }else{
@@ -54,7 +54,7 @@ function Nav()
                         </Link>
                     ) }
                     <button onClick={() => { setMin(true); }}>
-                        <SVG src="/icons/up-arrow.svg" />
+                        <SVG src="/Assets/icons/up-arrow.svg" />
                     </button>
                 </nav>
             )

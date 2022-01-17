@@ -14,7 +14,7 @@ function AboutMe()
                     in programming for as long as i can remember and over the past 3 years 
                     have significantly improved my knowledge and skillset within web dev.
                 </p>
-                <img src="/images/head_shot.jpg" alt="me"></img>
+                <img src="/Assets/images/head_shot.jpg" alt="me"></img>
             </div>
         </main>
     )

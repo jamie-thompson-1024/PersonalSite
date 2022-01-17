@@ -5,7 +5,7 @@ interface ProjectInfo
     description: string
     thumbnail?: string
     tags: Array<string>
-    href: string
+    markdown: string
 }
 
 interface Filter
