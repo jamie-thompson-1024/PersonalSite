@@ -1,5 +1,6 @@
 
 import { useLocation } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown'
 import { useEffect, useState } from 'react';
 
 import './Project.css';
@@ -24,7 +25,7 @@ function Project()
 
     return (
         <main className="Project PageCommon">
-            { markdown }
+            <ReactMarkdown children={ markdown } />
         </main>
     )
 }
