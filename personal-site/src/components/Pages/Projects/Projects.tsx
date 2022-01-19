@@ -8,8 +8,8 @@ import { ProjectInfo, Order, Filter } from './ProjectInfo';
 
 function Projects()
 {
-    const [projects, setProjects] = useState([]);
-    const [filteredProjects, setFilteredProjects] = useState(projects);
+    const [projects, setProjects] = useState<ProjectInfo[]>([]);
+    const [filteredProjects, setFilteredProjects] = useState<ProjectInfo[]>(projects);
 
     // applies order/filter to original projects list 
     const onSortFilter = useCallback((order?: Order, filter?: Filter) => {
