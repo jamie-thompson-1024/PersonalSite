@@ -9,8 +9,10 @@ function MessageMeForm()
 {
     const [formEnabled, setFormEnabled] = useState(false);
     const [botQuestion, setBotQuestion] = useState("");
+    // floor large random number to get likely unique string
     const [formId] = useState("" + Math.floor(Math.random() * 10000000000000));
 
+    // get bot test question from server using unique string
     useEffect(() => {
         fetch('/message/botquestion', {
             method: 'POST',
@@ -19,6 +21,7 @@ function MessageMeForm()
         })
         .then(response => {
             if(response.ok)
+                // if seccesful enable form and set question
                 response.text()
                 .then(text => text)
                 .then((question) => {
@@ -27,6 +30,7 @@ function MessageMeForm()
                 });
             else
             {
+                // if failed disable form and set question to error message
                 setFormEnabled(false);
                 setBotQuestion(failMessage);
             }
@@ -67,6 +71,7 @@ function MessageMeForm()
                 <div>
                     <label
                         htmlFor="bottest" 
+                        // if question equal to fail message color red
                         className={ "" + failMessage === botQuestion ? " MessageMeForm-failed" : "" }>
                             { botQuestion }
                         </label>

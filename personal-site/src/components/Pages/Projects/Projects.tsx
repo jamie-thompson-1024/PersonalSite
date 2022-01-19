@@ -11,10 +11,12 @@ function Projects()
     const [projects, setProjects] = useState([]);
     const [filteredProjects, setFilteredProjects] = useState(projects);
 
+    // applies order/filter to original projects list 
     const onSortFilter = useCallback((order?: Order, filter?: Filter) => {
         setFilteredProjects(projects);
     }, [setFilteredProjects, projects]);
 
+    // retreives project list
     useEffect(() => {
         fetch('/Assets/projects/projects.json')
         .then((response) => {

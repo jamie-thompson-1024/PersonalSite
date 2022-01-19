@@ -8,11 +8,13 @@ import '../PageCommon.css';
 
 function Project()
 {
+    // get path to markdown file from url search string
     const markdownPath = decodeURIComponent(
         useLocation().search.substring(1));
         
     const [markdown, setMarkdown] = useState("");
 
+    // fetch markdown file contents useing path from url
     useEffect(() => {
         fetch(`/Assets/projects/${markdownPath}`)
         .then((response) => {

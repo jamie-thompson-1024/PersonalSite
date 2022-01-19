@@ -16,6 +16,7 @@ const links = [
 function Nav()
 {
     const [min, setMin] = useState(true);
+    // set mobile mode if screen width below threshold
     const [isMobile, setIsMobile] = useState(window.innerWidth < landscapeMinWidth);
 
     const location = useLocation();
@@ -24,6 +25,7 @@ function Nav()
         setIsMobile(window.innerWidth < landscapeMinWidth);
     }, []);
 
+    // update mode on window resize
     useEffect(() => {
         window.addEventListener('resize', resize);
         return () => {
