@@ -18,14 +18,23 @@ function Projects()
 
     // retreives project list
     useEffect(() => {
+        let doAsync = true;
+
         fetch('/Assets/projects/projects.json')
         .then((response) => {
             response.json()
             .then(({ projects }) => {
-                setProjects(projects);
-                onSortFilter();
+                if(doAsync)
+                {
+                    setProjects(projects);
+                    onSortFilter();
+                }
             });
         });
+
+        return () => {
+            doAsync = false;
+        };
     }, [setProjects, onSortFilter]);
 
     return (

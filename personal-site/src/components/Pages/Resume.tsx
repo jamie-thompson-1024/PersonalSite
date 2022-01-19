@@ -4,10 +4,10 @@ import './Resume.css';
 function Resume()
 {
     return (
-        <div className="Resume">
-            <iframe src="/Assets/Resume.pdf">
+        <main className="Resume PageCommon">
+            <iframe src="/Assets/Resume.pdf" title="resume">
             </iframe>
-        </div>
+        </main>
     )
 }
 
