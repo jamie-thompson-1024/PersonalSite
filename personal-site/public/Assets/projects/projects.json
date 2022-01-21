@@ -9,7 +9,7 @@
         {
             "name": "Todo App",
             "description": "A basic client side TODO app",
-            "tags": ["Typescript", "React"],
+            "tags": ["Typescript", "React", "Jest"],
             "thumbnail": "/Assets/projects/images/todoapp-thumbnail.svg",
             "markdown": "todoapp.md"
         }
