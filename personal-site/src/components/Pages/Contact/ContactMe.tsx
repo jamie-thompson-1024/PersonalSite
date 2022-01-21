@@ -14,7 +14,6 @@ function ContactMe()
                         <li>Phone: [work phone number]</li>
                     </ul>
                 </div>
-                <MessageMeForm></MessageMeForm>
             </div>
         </main>
     )

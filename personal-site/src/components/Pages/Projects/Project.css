@@ -1,4 +1,9 @@
 .Project
 {
+    padding: 0 15px 0 15px;
+}
 
+.Project h1
+{
+    margin-top: 0;
 }

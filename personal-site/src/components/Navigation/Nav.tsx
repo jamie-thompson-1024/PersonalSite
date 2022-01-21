@@ -42,7 +42,7 @@ function Nav()
                     <button onClick={() => { setMin(false); }}>
                         <SVG src="/Assets/icons/hamburger-menu.svg" />
                     </button>
-                    <div>{ links.find(link => !!location.pathname.match(`/^${link.path}/g`) )?.name }</div>
+                    <div>{ links.find(link => location.pathname === link.path)?.name }</div>
                 </nav>
             )
         }else{

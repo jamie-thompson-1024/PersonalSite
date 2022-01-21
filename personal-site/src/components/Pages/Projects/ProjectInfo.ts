@@ -13,12 +13,7 @@ interface Filter
 
 }
 
-enum Order
-{
-
-}
-
 export type {
     ProjectInfo,
-    Order, Filter
+    Filter
 };

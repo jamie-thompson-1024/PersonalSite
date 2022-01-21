@@ -4,7 +4,7 @@ import '../PageCommon.css';
 import SortFilterProjects from './SortFilterProjects';
 import ProjectList from './ProjectList';
 import { useCallback, useEffect, useState } from 'react';
-import { ProjectInfo, Order, Filter } from './ProjectInfo';
+import { ProjectInfo, Filter } from './ProjectInfo';
 
 function Projects()
 {
@@ -12,7 +12,7 @@ function Projects()
     const [filteredProjects, setFilteredProjects] = useState<ProjectInfo[]>(projects);
 
     // applies order/filter to original projects list 
-    const onSortFilter = useCallback((order?: Order, filter?: Filter) => {
+    const onSortFilter = useCallback((filter?: Filter) => {
         setFilteredProjects(projects);
     }, [setFilteredProjects, projects]);
 
@@ -39,7 +39,7 @@ function Projects()
 
     return (
         <main className="Projects PageCommon">
-            <SortFilterProjects onChange={onSortFilter}/>
+            {/*<SortFilterProjects onChange={onSortFilter}/>*/}
             <ProjectList projects={filteredProjects}/>
         </main>
     )

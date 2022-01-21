@@ -34,6 +34,7 @@
 .Nav > a:hover
 {
     background-color: var(--theme-link-hover);
+    text-decoration: underline;
 }
 
 .Nav-ThisLocation

@@ -5,6 +5,13 @@
             "description": "Test project description",
             "tags": ["thing 0", "thing 2"],
             "markdown": "testproject.md"
+        },
+        {
+            "name": "Todo App",
+            "description": "A basic client side TODO app",
+            "tags": ["Typescript", "React"],
+            "thumbnail": "/Assets/projects/images/todoapp-thumbnail.svg",
+            "markdown": "todoapp.md"
         }
     ]
 }

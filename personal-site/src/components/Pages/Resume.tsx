@@ -5,8 +5,9 @@ function Resume()
 {
     return (
         <main className="Resume PageCommon">
-            <iframe src="/Assets/Resume.pdf" title="resume">
-            </iframe>
+            <object data="/Assets/Resume.pdf" type="application/pdf">
+                <div>No PDF viewer available</div>
+            </object>
         </main>
     )
 }
