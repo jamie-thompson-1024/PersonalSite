@@ -3,6 +3,8 @@
 
 **Hosted here: [todo.thompson-dev.me](https://todo.thompson-dev.me/)**
 
+**Github repo: [github.com/jamie-thompson-1024/TODO-React-App](https://github.com/jamie-thompson-1024/TODO-React-App/)**
+
 A basic todo app built in react with typescript. 
 The todo functionality built in a model object and then with a react interface build around it.
 The todo model unit tested with jest
