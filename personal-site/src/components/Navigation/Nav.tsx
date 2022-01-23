@@ -19,6 +19,9 @@ function Nav()
     // set mobile mode if screen width below threshold
     const [isMobile, setIsMobile] = useState(window.innerWidth < landscapeMinWidth);
 
+    const [transition, setTransition] = useState(true);
+    const [minTransition, setMinTransistion] = useState(true);
+
     const location = useLocation();
 
     const resize = useCallback(() => {
@@ -38,8 +41,13 @@ function Nav()
         if(min)
         {
             return(
-                <nav className="Nav Nav-Portrait-min">
-                    <button onClick={() => { setMin(false); }}>
+                <nav className={`Nav Nav-Portrait-min ${ minTransition ? "Nav-expand-x-anim" : "Nav-contract-x-anim"}`}>
+                    <button onClick={() => { 
+                            setTransition(true); 
+                            setMinTransistion(false);
+                            setTimeout(() => {
+                                setMin(false);}, 
+                            350); }}>
                         <SVG src="/Assets/icons/hamburger-menu.svg" />
                     </button>
                     <div>{ links.find(link => location.pathname === link.path)?.name }</div>
@@ -47,7 +55,7 @@ function Nav()
             )
         }else{
             return(
-                <nav className="Nav Nav-Portrait">
+                <nav className={`Nav Nav-Portrait ${ transition ? "Nav-expand-y-anim" : "Nav-contract-y-anim"}`}>
                     { links.map((link, i) => 
                         <Link 
                             className={link.path === location.pathname ? "Nav-ThisLocation" : ""} 
@@ -56,7 +64,12 @@ function Nav()
                                 { link.name }
                         </Link>
                     ) }
-                    <button onClick={() => { setMin(true); }}>
+                    <button onClick={() => { 
+                            setTransition(false); 
+                            setMinTransistion(true);
+                            setTimeout(() => {
+                                setMin(true);}, 
+                            400); }}>
                         <SVG src="/Assets/icons/up-arrow.svg" />
                     </button>
                 </nav>

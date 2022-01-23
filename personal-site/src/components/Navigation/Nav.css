@@ -1,8 +1,54 @@
+@keyframes expandY
+{
+    from {
+        transform: translateY(-100%) scaleY(0%);
+    }
+
+    to {
+        transition: translateY(0%) scaleY(100%);
+    }
+}
+
+@keyframes expandX
+{
+    from {
+        transform: translateX(-100%) scaleX(0%);
+    }
+
+    to {
+        transition: translateX(0%) scaleX(100%);
+    }
+}
+
+.Nav-expand-y-anim
+{
+    animation-duration: 0.35s;
+    animation-name: expandY;
+}
+
+.Nav-expand-x-anim
+{
+    animation-duration: 0.35s;
+    animation-name: expandX;
+}
+
+.Nav-contract-y-anim
+{
+    transition-duration: 0.35s;
+    transform: translateY(-100%) scaleY(0%);
+}
+
+.Nav-contract-x-anim
+{
+    transition-duration: 0.35s;
+    transform: translateX(-100%) scaleX(0%);
+}
+
 .Nav
 {
     width: 100%;
     box-sizing: border-box;
-    padding: 1em;
+    padding: 0.2em;
 
     text-align: center;
 
@@ -28,7 +74,12 @@
     text-decoration: none;
     color: var(--theme-text);
     border-radius: 5px;
-    padding: 3px 10px 3px 10px;
+    padding: 0 15px 0 15px;
+    height: 2.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Nav > a:hover
@@ -48,14 +99,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    column-gap: 0.3em;
 }
 
 .Nav-Portrait
 {
     flex-direction: column;
     justify-content: flex-start;
-    row-gap: 0.5em;
 }
 
 .Nav-Portrait-min
