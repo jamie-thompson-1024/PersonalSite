@@ -13,7 +13,7 @@ function ProjectItem(props: { projectInfo: ProjectInfo })
             </a>
             <p className="ProjectItem-Description">{ props.projectInfo.description }</p>
             <div className="ProjectItem-TagBox">
-                { props.projectInfo.tags.map((tag, i) => 
+                { props.projectInfo?.tags?.map((tag, i) => 
                     <p className="ProjectItem-Tag" key={i}>#{ tag }</p>
                 )}
             </div>
