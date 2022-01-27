@@ -28,6 +28,11 @@
     margin-top: 15px;
 }
 
+.Project ul > li
+{
+    padding-left: 8px;
+}
+
 .Project ul
 {
     margin: 10px 0 10px 0;
