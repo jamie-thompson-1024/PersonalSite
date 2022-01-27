@@ -1,17 +1,41 @@
 .AboutMe
 {
+    max-width: 40em;
+    padding: 0 1em 0 1em;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
 }
 
 .AboutMe-Head
 {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.AboutMe-Head > h1
+{
+    font-size: 1.1em;
+    margin: 0;
 }
 
 .AboutMe-Head > p
 {
-    padding: 2em 3em 2em 3em;
+    margin: 0;
+}
+
+.AboutMe-Head > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .AboutMe-Head > img
@@ -25,6 +49,11 @@
     margin: 0.5em;
 
     clip-path: circle(50%);
+}
+
+.AboutMe-Body
+{
+    width: 100%;
 }
 
 @media (min-width: 600px) 

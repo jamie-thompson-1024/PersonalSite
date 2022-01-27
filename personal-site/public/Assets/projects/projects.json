@@ -10,6 +10,7 @@
         {
             "name": "WIP Projects",
             "description": "List of project currently in the works",
+            "thumbnail": "/Assets/projects/images/wipprojects-thumbnail.svg",
             "markdown": "wipprojects.md"
         }
     ]

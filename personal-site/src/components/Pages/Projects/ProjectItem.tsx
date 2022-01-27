@@ -1,9 +1,14 @@
 
+import { useCallback } from 'react';
 import { ProjectInfo } from './ProjectInfo';
 import './ProjectItem.css';
 
 function ProjectItem(props: { projectInfo: ProjectInfo })
 {
+    const onImageNotFound = useCallback((e) => {
+        e.target.src = "/Assets/icons/no-image.svg";
+    }, []);
+
     return (
         <div className="ProjectItem">
             <a 
@@ -17,12 +22,11 @@ function ProjectItem(props: { projectInfo: ProjectInfo })
                     <p className="ProjectItem-Tag" key={i}>#{ tag }</p>
                 )}
             </div>
-            <picture className="ProjectItem-Image">
-                <source srcSet={ props.projectInfo.thumbnail } />
-                <img  
-                    src="/Assets/icons/no-image.svg" 
-                    alt={ props.projectInfo.name + " Thumbnail" } />
-            </picture>
+            <img 
+                className="ProjectItem-Image"
+                src={ props.projectInfo.thumbnail } 
+                alt={ props.projectInfo.name + " Thumbnail" } 
+                onError={onImageNotFound}/>
         </div>
     )
 }

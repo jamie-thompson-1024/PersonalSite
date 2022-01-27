@@ -2,5 +2,9 @@
 {
     flex-grow: 1;
 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
     padding: 5px 15px 5px 15px;
 }

@@ -8,8 +8,45 @@
     margin-top: 0;
 }
 
+.Project p
+{
+    margin: 10px 0 10px 0;
+}
+
 .Project img
 {
     width: 100%;
 }
 
+.Project blockquote > h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child
+{
+    margin-top: 10px;
+}
+
+.Project blockquote > h1,h2,h3,h4,h5
+{
+    margin-top: 15px;
+}
+
+.Project ul
+{
+    margin: 10px 0 10px 0;
+    list-style-type: '-';
+    padding-inline-start: 30px;
+}
+
+.Project h1, h2, h3, h4, h5, h6
+{
+    margin-bottom: 5px;
+}
+
+.Project blockquote
+{
+    padding: 5px 5px 5px 10px;
+
+    background-color: #EEEEEE;
+
+    border-left: 0.5em solid #CCCCCC;
+
+    box-shadow: 3px 2px 2px #CCCCCC;
+}
