@@ -9,7 +9,11 @@ A basic todo app built in react with typescript.
 The todo functionality built in a model object and then with a react interface build around it.
 The todo model unit tested with jest
 
-## Features
+## Final App
+
+![Final App](/Assets/projects/images/todoapp-finalapp.png "final app")
+
+## Initial Features
 
 - Data is saved to localstorage when ever a change is made
 - Localstorage can be wiped
