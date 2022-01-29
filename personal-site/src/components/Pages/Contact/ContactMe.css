@@ -6,6 +6,11 @@
     justify-content: flex-start;
 }
 
+.ContactMe ul
+{
+    list-style-type: none;
+}
+
 .ContactMe > div
 {
     width: 100%;

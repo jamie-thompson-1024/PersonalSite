@@ -19,7 +19,7 @@ function Content()
                 <Route path="/projects" element={ <Projects /> } />
                 <Route path="/project" element={ <Project /> } />
                 <Route path="/resume" element={ <Resume /> } />
-                <Route path="/contactme" element={ <ContactMe /> } />
+                { /*<Route path="/contactme" element={ <ContactMe /> } />*/ }
             </Routes>
         </div>
     )

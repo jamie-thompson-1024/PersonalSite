@@ -1,7 +1,7 @@
 
 # React Todo App
 
-**Hosted here: [todo.thompson-dev.me](https://todo.thompson-dev.me/)**
+**Hosted here: [todo.thompson-dev.nz](https://todo.thompson-dev.nz/)**
 
 **Github repo: [github.com/jamie-thompson-1024/TODO-React-App](https://github.com/jamie-thompson-1024/TODO-React-App/)**
 
@@ -36,7 +36,7 @@ The todo model unit tested with jest
 
 ### Item:
 
-- Constructor(): is successful with intact data
+- Constructor(): creates object with valid default data
 - toJson() -> fromJson():  is successful with intact data
 - setName(): rejects invalid input accepts valid
 - setDesc(): rejects invalid input accepts valid
@@ -46,18 +46,18 @@ The todo model unit tested with jest
 
 ### Settings:
 
-- setTheme(): sets theme and creates themeChangeEvent
+- setTheme(): creates object with valid default data
 - getThemes(): returns an array of available themes that can all be used with setTheme()
 - toJson() -> fromJson(): is successful with intact data
 
 ### Change:
 
-- Constructor(): is successful with intact data
+- Constructor(): creates object with valid default data
 - toJson() -> fromJson(): is successful with intact data
 
 ### ItemCollection:
 
-- Constructor(): is successful with intact data
+- Constructor(): creates object with valid default data
 - toJson() -> fromJson():  is successful with intact data
 - setName(): rejects invalid input accepts valid and creates changeEvent
 - setDesc(): rejects invalid input accepts valid and creates changeEvent
@@ -72,10 +72,4 @@ The todo model unit tested with jest
 - createItem(): creates item with correct data rejects invalid data with array of ValidationMessage enums for each param
 - undo(): correctly undos given change and removes from changes adding to undone Changes
 - redo(): correctly redos given change and removes from undunChanges if exists adding to changes
-
-### Storage:
-
-- load(): successfully loads data from localstorage and creates loadEvent
-- save(): successfully saves data to localstorage and creates saveEvent
-- wipe(): clears localstorage data and calls load event
 
