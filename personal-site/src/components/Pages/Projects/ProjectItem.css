@@ -9,6 +9,21 @@
 
     border: 1px solid var(--theme-border);
     border-radius: 5px;
+    
+    animation-name: scalein;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+}
+
+@keyframes scalein
+{
+    from {
+        transform: scale(0%);
+    }
+
+    to {
+        transform: scale(100%);
+    }
 }
 
 .ProjectItem-Title

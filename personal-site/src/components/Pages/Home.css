@@ -8,6 +8,12 @@
 .Home-TextContainer
 {
     padding: 3em 4em 3em 3em;
+
+    animation-name: slidein-left;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    transform: translateX(-200%);
 }
 
 .Home > img
@@ -16,6 +22,32 @@
     max-width: 100%;
 
     clip-path: ellipse(50% 50%);
+    
+    animation-name: scalein;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+}
+
+@keyframes slidein-left
+{
+    from {
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes scalein
+{
+    from {
+        transform: scale(0%);
+    }
+
+    to {
+        transform: scale(100%);
+    }
 }
 
 @media (min-width: 600px) 
