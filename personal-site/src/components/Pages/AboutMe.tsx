@@ -23,7 +23,7 @@ function AboutMe()
                     Starting when I was around 10 I was introduced to arduino and 
                     programming. I spent the next few years casually tinkering untill 
                     ICT classes in high school helped to give me a more solid foundation 
-                    that i would build upon in my own time and going into tertiary education.
+                    that I would build upon in my own time and during tertiary education.
                     <br /><br/>
                     Now I am relatively well versed in front-end web development, mostly vanilla and react.
                     But am fully willing to learn new frameworks and languages to further my knowledge and experice.
