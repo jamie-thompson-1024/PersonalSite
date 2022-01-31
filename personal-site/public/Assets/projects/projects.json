@@ -8,6 +8,13 @@
             "markdown": "todoapp.md"
         }, 
         {
+            "name": "Reaction Trainer",
+            "description": "An app that provides some games for exercising reaction times",
+            "tags": ["Typescript", "React"],
+            "thumbnail": "/Assets/projects/images/reactionapp-thumbnail.svg",
+            "markdown": "reactionapp.md"
+        }, 
+        {
             "name": "WIP Projects",
             "description": "List of project currently in the works",
             "thumbnail": "/Assets/projects/images/wipprojects-thumbnail.svg",
