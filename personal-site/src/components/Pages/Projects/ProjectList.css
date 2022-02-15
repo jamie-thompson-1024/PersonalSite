@@ -1,10 +1,10 @@
 .ProjectList
 {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 @media (min-width: 600px)
