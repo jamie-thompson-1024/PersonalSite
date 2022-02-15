@@ -7,7 +7,7 @@
 
 .Home-TextContainer
 {
-    padding: 3em 4em 3em 3em;
+    padding: 0 4em 3em 3em;
 
     animation-name: slidein-left;
     animation-duration: 1s;
