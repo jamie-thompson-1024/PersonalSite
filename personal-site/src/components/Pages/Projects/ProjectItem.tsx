@@ -10,25 +10,27 @@ function ProjectItem(props: { projectInfo: ProjectInfo })
     }, []);
 
     return (
-        <div className="ProjectItem">
-            <a 
-                className="ProjectItem-Title" 
-                href={ "/project?" + props.projectInfo.markdown }>
-                    { props.projectInfo.name }
-            </a>
-            <p className="ProjectItem-Description">{ props.projectInfo.description }</p>
-            <div className="ProjectItem-TagBox">
-                { props.projectInfo?.tags?.map((tag, i) => 
-                    <p className="ProjectItem-Tag" key={i}>#{ tag }</p>
-                )}
-            </div>
+        <article className="ProjectItem">
             <img 
                 className="ProjectItem-Image"
                 src={ props.projectInfo.thumbnail } 
                 alt={ props.projectInfo.name + " Thumbnail" } 
                 onError={onImageNotFound}/>
-        </div>
-    )
+            <h2 className="ProjectItem-Title">
+                <a href={ "/project?" + props.projectInfo.markdown }>
+                    { props.projectInfo.name }
+                </a>
+            </h2>
+            <div className="ProjectItem-TagBox">
+                { props.projectInfo?.tags?.map((tag, i) => 
+                    <p className="ProjectItem-Tag" key={i}>#{ tag }</p>
+                )}
+            </div>
+            <p className="ProjectItem-Description">
+                { props.projectInfo.description }
+            </p>
+        </article>
+    );
 }
 
 export default ProjectItem;

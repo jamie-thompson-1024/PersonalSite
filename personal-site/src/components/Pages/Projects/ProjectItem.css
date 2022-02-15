@@ -1,17 +1,20 @@
 .ProjectItem
 {
-    width: 20em;
-    padding: 5px;
+    width: 18em;
 
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: 1.8em auto 2em;
+    padding: 0 0 8px 0;
+    gap: 8px;
 
-    border: 1px solid var(--theme-border);
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    box-shadow: 0 8px 18px 0 rgb(0 0 0 / 12%);
+    transition: box-shadow 0.2s ease-in-out;
     
     animation-name: scalein;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-delay: 0s;
 }
 
@@ -26,14 +29,18 @@
     }
 }
 
+.ProjectItem > *:not(img)
+{
+    margin: 0 10px;
+}
+
 .ProjectItem-Title
 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-
     height: fit-content;
-    margin: 5px;
+}
 
+.ProjectItem-Title > a
+{
     color: var(--theme-text-0);
     text-decoration: none;
 }
@@ -45,20 +52,11 @@
 
 .ProjectItem-Description
 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-
-    margin: 5px;
     font-size: 0.9em;
 }
 
 .ProjectItem-TagBox
 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-
-    margin: 5px 5px 5px 15px;
-
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -75,13 +73,9 @@
 
 .ProjectItem-Image
 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
+    width: 100%;
+    height: 15em;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: 8em;
+    object-fit: cover;
 }
 
