@@ -12,7 +12,7 @@ function AboutMe()
                         My name is<br />Jamie Thompson
                     </h1>
                     <p>
-                        I am a mostly self-taught software developer interested in 
+                        I am a mostly self-taught software developer based in Canterbury, NZ. Who is interested in 
                         furthering my knowledge and experience.
                     </p>
                 </div>
