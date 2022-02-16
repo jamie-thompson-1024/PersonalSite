@@ -3,21 +3,28 @@
         {
             "name": "Todo App",
             "description": "A basic client side TODO app",
-            "tags": ["Typescript", "React", "Jest"],
-            "thumbnail": "/Assets/projects/images/todoapp-thumbnail.svg",
+            "tags": ["TypeScript", "React", "Jest", "HTML/CSS"],
+            "thumbnail": "/Assets/projects/images/todoapp/todoapp-0.PNG",
             "markdown": "todoapp.md"
         }, 
         {
             "name": "Reaction Trainer",
             "description": "An app that provides some games for exercising reaction times",
-            "tags": ["Typescript", "React"],
-            "thumbnail": "/Assets/projects/images/reactionapp-thumbnail.svg",
+            "tags": ["TypeScript", "React", "HTML/CSS"],
+            "thumbnail": "/Assets/projects/images/reactionapp/reactionapp-0.PNG",
             "markdown": "reactionapp.md"
-        }, 
+        },
+        {
+            "name": "Snake",
+            "description": "Basic Snake game",
+            "tags": ["JavaScript", "HTML/CSS"],
+            "thumbnail": "/Assets/projects/images/snakegame/snakegame-0.PNG",
+            "markdown": "snakegame.md"
+        },
         {
             "name": "WIP Projects",
             "description": "List of project currently in the works",
-            "thumbnail": "/Assets/projects/images/wipprojects-thumbnail.svg",
+            "thumbnail": "/Assets/projects/images/wip/wipprojects-thumbnail.PNG",
             "markdown": "wipprojects.md"
         }
     ]
