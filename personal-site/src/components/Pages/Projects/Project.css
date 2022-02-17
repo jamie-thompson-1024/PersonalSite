@@ -11,11 +11,27 @@
 .Project p
 {
     margin: 10px 0 10px 0;
+
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .Project img
 {
     width: 100%;
+    border: 1px solid #cfcfcf;
+    box-shadow: 2px 2px 5px 1px #dddddd;
+}
+
+@media (min-width: 600px) 
+{
+    .Project img
+    {
+        width: 49%;
+    }
 }
 
 .Project blockquote > h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child

@@ -11,4 +11,5 @@ Built with vanilla HTML / CSS / JavaScript using the Canvas API
 
 ## Final App
 
-![Final Game](/Assets/projects/images/ "final game")
+![Final Game 0](/Assets/projects/images/snakegame/snakegame-0.PNG "final game")
+![Final Game 1](/Assets/projects/images/snakegame/snakegame-1.PNG "final game")

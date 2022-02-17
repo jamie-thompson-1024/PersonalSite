@@ -9,10 +9,6 @@ A client-side app that provides a small selection of games for exercising reacti
 
 Built with react and typescript
 
-## Final App
-
-![Final App](/Assets/projects/images/reactionapp-finalapp.png "final app")
-
 ## Initial Features
 
 - List of mini games, clicking on one brings to details page
@@ -27,12 +23,17 @@ Built with react and typescript
 - Click orbs as they appear on screen
 - Click screen when it turns listed color
 
+## Final App
+
+![Final App 0](/Assets/projects/images/reactionapp/reactionapp-0.PNG "final app")
+![Final App 1](/Assets/projects/images/reactionapp/reactionapp-1.PNG "final app")
+![Final App 2](/Assets/projects/images/reactionapp/reactionapp-2.PNG "final app")
+
 ## React component structure diagram
 
-![React structure](/Assets/projects/images/reactionapp-reactdiagram.png "react structure")
+![React structure](/Assets/projects/images/reactionapp/reactionapp-reactdiagram.png "react structure")
 
 ## Inital Wireframes
 
-![Game list wireframe](/Assets/projects/images/reactionapp-wireframe0.png "game list wireframe")
-
-![Game details wireframe](/Assets/projects/images/reactionapp-wireframe1.png "Game details wireframe")
+![Game list wireframe](/Assets/projects/images/reactionapp/reactionapp-wireframe0.png "game list wireframe")
+![Game details wireframe](/Assets/projects/images/reactionapp/reactionapp-wireframe1.png "Game details wireframe")
