@@ -25,6 +25,7 @@
             "name": "Conways Life",
             "description": "JavaScript module that runs Conways Game of Life",
             "tags": ["Javascript", "TypeScript", "HTML/CSS", "Jasmine"],
+            "thumbnail": "/Assets/projects/images/conwayslife/thumbnail.PNG",
             "markdown": "conwayslife.md"
         },
         {
