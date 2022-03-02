@@ -22,9 +22,14 @@
             "markdown": "snakegame.md"
         },
         {
+            "name": "Conways Life",
+            "description": "JavaScript module that runs Conways Game of Life",
+            "tags": ["Javascript", "TypeScript", "HTML/CSS", "Jasmine"],
+            "markdown": "conwayslife.md"
+        },
+        {
             "name": "WIP Projects",
             "description": "List of project currently in the works",
-            "thumbnail": "/Assets/projects/images/wip/wipprojects-thumbnail.PNG",
             "markdown": "wipprojects.md"
         }
     ]
