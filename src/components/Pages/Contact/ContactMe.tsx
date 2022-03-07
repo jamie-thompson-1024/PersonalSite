@@ -7,12 +7,12 @@ function ContactMe()
     return(
         <main className="ContactMe PageCommon">
             <div>
-                <div>
+                <address>
                     <ul>
                         <li>Email: jamie.thompson.1024@gmail.com</li>
                         <li>Phone: +64 27 908 7120</li>
                     </ul>
-                </div>
+                </address>
             </div>
         </main>
     )
