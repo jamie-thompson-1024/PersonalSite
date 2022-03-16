@@ -4,14 +4,16 @@ A list of personal project im currently working on but are not listed under proj
 
 ## Projects: 
 
->### Quizzical
+>### EEBoxJS
 >
->An app that allows users to create and complete quizzes
+>A Javascript/Typescript module that provides Electrical engineering calculation and visualisation tools
 >
 >#### Technologies
 >
->- Next.js
+>- Webpack
 >- TypeScript
+>- Jest
+>- ESLint
 
 >### Brainf**k-js
 >
