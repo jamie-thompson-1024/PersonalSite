@@ -29,6 +29,13 @@
             "markdown": "conwayslife.md"
         },
         {
+            "name": "2048 Clone",
+            "description": "A clone of of the game 2048 made with ReactJS and TypeScript",
+            "tags": ["Javascript", "TypeScript", "HTML/CSS", "React"],
+            "thumbnail": "/Assets/projects/images/2048clone/image-0.png",
+            "markdown": "2048clone.md"
+        },
+        {
             "name": "WIP Projects",
             "description": "List of project currently in the works",
             "markdown": "wipprojects.md"
