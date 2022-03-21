@@ -10,11 +10,32 @@ function Projects()
 {
     const [projects, setProjects] = useState<ProjectInfo[]>([]);
     const [filteredProjects, setFilteredProjects] = useState<ProjectInfo[]>(projects);
+    const [filter, setFilter] = useState<Filter>({});
 
     // applies order/filter to original projects list 
-    const onSortFilter = useCallback((filter?: Filter) => {
-        setFilteredProjects(projects);
-    }, [setFilteredProjects, projects]);
+    const onSortFilter = useCallback((newFilter?: Filter) => {
+        setFilter(newFilter ?? {});
+    }, [setFilter]);
+
+    // update filtered list when filter or projects are changed
+    useEffect(() => {
+        if(!filter || !filter.byTag)
+        {            
+            setFilteredProjects(projects);
+        } else {
+            let filterTags = filter.byTag ?? [];
+
+            let newFiltered = projects.filter((project) => {
+                return filterTags.every((filterTag) => {
+                    return project.tags?.some((projectTag) => 
+                        filterTag.toLocaleLowerCase() === projectTag.toLocaleLowerCase()
+                    );
+                });
+            });
+
+            setFilteredProjects(newFiltered);
+        }
+    }, [filter, projects]);
 
     // retreives project list
     useEffect(() => {
@@ -27,7 +48,6 @@ function Projects()
                 if(doAsync)
                 {
                     setProjects(projects);
-                    onSortFilter();
                 }
             });
         });
@@ -35,11 +55,11 @@ function Projects()
         return () => {
             doAsync = false;
         };
-    }, [setProjects, onSortFilter]);
+    }, []);
 
     return (
         <main className="Projects PageCommon">
-            {/*<SortFilterProjects onChange={onSortFilter}/>*/}
+            <SortFilterProjects onChange={onSortFilter}/>
             <ProjectList projects={filteredProjects}/>
         </main>
     )

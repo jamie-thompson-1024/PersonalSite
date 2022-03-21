@@ -12,7 +12,10 @@
 
     box-shadow: 0 8px 18px 0 rgb(0 0 0 / 12%);
     transition: 0.2s ease-in-out;
-    
+}
+
+.ProjectItem-scaleIn 
+{
     animation-name: scalein;
     animation-duration: 1s;
 }
