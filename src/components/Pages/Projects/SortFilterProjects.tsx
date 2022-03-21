@@ -20,11 +20,16 @@ function SortFilterProjects(props: { onChange: (newFilter: Filter) => void })
 
     return (
         <div className="SortFilterProjects">
-            <input 
-                type="text" 
-                placeholder="search tags" 
-                value={tagSearchValue} 
-                onChange={onSearchChange}></input>
+            <div>
+                <span>
+                    🔎︎
+                </span>
+                <input 
+                    type="text" 
+                    placeholder="search tags" 
+                    value={tagSearchValue} 
+                    onChange={onSearchChange}></input>
+            </div>
         </div>
     )
 }

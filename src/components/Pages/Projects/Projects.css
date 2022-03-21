@@ -1,4 +1,8 @@
 .Projects
 {
     padding: 0 15px 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
