@@ -26,7 +26,7 @@ function SortFilterProjects(props: { onChange: (newFilter: Filter) => void })
                 </span>
                 <input 
                     type="text" 
-                    placeholder="search tags" 
+                    placeholder="Search Tags" 
                     value={tagSearchValue} 
                     onChange={onSearchChange}></input>
             </div>
