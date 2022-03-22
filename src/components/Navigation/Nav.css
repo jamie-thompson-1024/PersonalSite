@@ -46,8 +46,14 @@
 
 .Nav
 {
-    width: 100%;
-    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    background-color: var(--theme-background);
+
+    width: 100vw;
     padding: 0.2em;
 
     text-align: center;
@@ -66,7 +72,7 @@
 .Nav > button > svg
 {
     width: 2em;
-    height: 2em;
+    aspect-ratio: 1 / 1;
 }
 
 .Nav > a
