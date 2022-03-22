@@ -28,7 +28,10 @@ function Projects()
             let newFiltered = projects.filter((project) => {
                 return filterTags.every((filterTag) => {
                     return project.tags?.some((projectTag) => 
-                        filterTag.toLocaleLowerCase() === projectTag.toLocaleLowerCase()
+                        //filterTag.toLocaleLowerCase() === projectTag.toLocaleLowerCase()
+                        projectTag
+                            .toLocaleLowerCase()
+                            .includes(filterTag.toLocaleLowerCase())
                     );
                 });
             });
