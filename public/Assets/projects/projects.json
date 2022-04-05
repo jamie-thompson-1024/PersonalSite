@@ -36,6 +36,13 @@
             "markdown": "2048clone.md"
         },
         {
+            "name": "Winemaking Calulator",
+            "description": "A simple calculator for determining residual sugars in wine",
+            "tags": ["Javascript", "HTML/CSS"],
+            "thumbnail": "/Assets/projects/images/winemakingcalc/thumbnail.png",
+            "markdown": "winemakingcalc.md"
+        },
+        {
             "name": "WIP Projects",
             "description": "List of project currently in the works",
             "markdown": "wipprojects.md"
