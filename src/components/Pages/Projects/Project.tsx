@@ -27,7 +27,9 @@ function Project()
 
     return (
         <main className="Project PageCommon">
-            <ReactMarkdown children={ markdown } />
+            <ReactMarkdown 
+                children={ markdown } 
+                linkTarget='_blank'/>
         </main>
     )
 }
