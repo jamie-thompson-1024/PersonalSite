@@ -9,4 +9,6 @@ A simple calculator for determining residule sugar when making wine.
 
 Built using HTML/CSS and Javascript
 
-![App](/Assets/projects/images/winemakingcalc/thumbnail.png "app")
+![App 0](/Assets/projects/images/winemakingcalc/thumbnail.png "app 0")
+
+![App 1](/Assets/projects/images/winemakingcalc/img-0.png "app 1")
