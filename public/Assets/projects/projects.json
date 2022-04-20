@@ -43,6 +43,13 @@
             "markdown": "winemakingcalc.md"
         },
         {
+            "name": "Java Snake",
+            "description": "A basic java version of the classic game snake",
+            "tags": ["Java", "JavaFX"],
+            "thumbnail": "/Assets/projects/images/snakejava/javasnake-1.PNG",
+            "markdown": "snakejava.md"
+        },
+        {
             "name": "WIP Projects",
             "description": "List of project currently in the works",
             "markdown": "wipprojects.md"
