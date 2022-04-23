@@ -21,19 +21,10 @@
 
 .Project img
 {
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    width: min(25rem, 100%);
     object-fit: contain;
     border: 1px solid #cfcfcf;
     box-shadow: 2px 2px 5px 1px #dddddd;
-}
-
-@media (min-width: 600px) 
-{
-    .Project img
-    {
-        width: 49%;
-    }
 }
 
 .Project blockquote > h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child

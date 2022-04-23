@@ -1,10 +1,23 @@
 
 import { useLocation } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown'
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Project.css';
 import '../PageCommon.css';
+
+function flatten(text: string, child: any): string {
+    return typeof child === 'string'
+      ? text + child
+      : React.Children.toArray(child.props.children).reduce(flatten, text)
+}
+  
+function HeadingRenderer(props: { children: any, level: any }) {
+    var children = React.Children.toArray(props.children)
+    var text = children.reduce(flatten, '')
+    var slug = text.toLowerCase().replace(/\W/g, '-')
+    return React.createElement('h' + props.level, {id: slug}, props.children)
+ }
 
 function Project()
 {
@@ -28,8 +41,15 @@ function Project()
     return (
         <main className="Project PageCommon">
             <ReactMarkdown 
-                children={ markdown } 
-                linkTarget='_blank'/>
+                children={ markdown }
+                components={{
+                    h1: HeadingRenderer,
+                    h2: HeadingRenderer,
+                    h3: HeadingRenderer,
+                    h4: HeadingRenderer,
+                    h5: HeadingRenderer,
+                    h6: HeadingRenderer,
+                }}/>
         </main>
     )
 }

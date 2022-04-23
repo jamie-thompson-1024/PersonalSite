@@ -50,6 +50,13 @@
             "markdown": "snakejava.md"
         },
         {
+            "name": "Wordpress Headless Blog",
+            "description": "A basic blog made with headless wordpress",
+            "tags": ["NextJS", "HTML/CSS", "React", "TypeScript", "Wordpress", "GraphQL"],
+            "thumbnail": "/Assets/projects/images/wpblog/blog-1.jpg",
+            "markdown": "wpblog.md"
+        },
+        {
             "name": "WIP Projects",
             "description": "List of project currently in the works",
             "markdown": "wipprojects.md"
