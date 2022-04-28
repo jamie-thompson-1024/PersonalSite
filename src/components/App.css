@@ -36,3 +36,12 @@
   --theme-link-hover: #F0F0F0;
   --theme-border: #9e9e9e;
 }
+
+*::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3334;
+}
