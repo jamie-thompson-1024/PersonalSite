@@ -8,6 +8,13 @@
             "markdown": "todoapp.md"
         }, 
         {
+            "name": "Todo App Rev2",
+            "description": "A simple TODO app with server side saving",
+            "tags": ["TypeScript", "React", "NextJS", "HTML/CSS", "Redux", "Prisma"],
+            "thumbnail": "/Assets/projects/images/todoapprev2/LoggedIn.PNG",
+            "markdown": "todoapprev2.md"
+        }, 
+        {
             "name": "Reaction Trainer",
             "description": "An app that provides some games for exercising reaction times",
             "tags": ["TypeScript", "React", "HTML/CSS"],
@@ -55,11 +62,6 @@
             "tags": ["NextJS", "HTML/CSS", "React", "TypeScript", "Wordpress", "GraphQL"],
             "thumbnail": "/Assets/projects/images/wpblog/blog-1.jpg",
             "markdown": "wpblog.md"
-        },
-        {
-            "name": "WIP Projects",
-            "description": "List of project currently in the works",
-            "markdown": "wipprojects.md"
         }
     ]
 }
