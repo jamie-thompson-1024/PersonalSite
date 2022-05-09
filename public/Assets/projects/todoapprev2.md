@@ -1,8 +1,6 @@
 
 # Todo App Rev2
 
-**Hosted here: [todo2.thompson-dev.nz](https://todo2.thompson-dev.nz/)**
-
 **Github repo: [github.com/jamie-thompson-1024/todo-rev2](https://github.com/jamie-thompson-1024/todo-rev2/)**
 
 A basic todo app built in NextJS with typescript. 
